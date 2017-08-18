@@ -1,0 +1,65 @@
+{
+    // stacked split container with 2 children
+    "layout": "stacked",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "name": "Terminal Temp",
+            "percent": 0.5,
+            "type": "con",
+            "swallows": [
+                {
+                    "class": "X-terminal-emulator",
+                    "instance": "x-terminal-emulator",
+		    "window_role": "win_temp"
+                }
+            ]
+        },
+        {
+            "name": "Terminal Left",
+            "percent": 0.5,
+            "type": "con",
+            "swallows": [
+                {
+                    "class": "X-terminal-emulator",
+                    "instance": "x-terminal-emulator",
+                    "window_role": "win_left"
+                }
+            ]
+        }
+    ]
+}
+
+{
+    // splitv split container with 1 children
+    "layout": "splitv",
+    "percent": 0.5,
+    "type": "con",
+    "nodes": [
+        {
+            "name": "Terminal Right Top",
+            "type": "con",
+            "swallows": [
+                {
+                    "class": "X-terminal-emulator",
+                    "instance": "x-terminal-emulator",
+                    "window_role": "win_right_top"
+                }
+            ]
+        },
+        {
+            "name": "Terminal Right Bottom",
+            "type": "con",
+            "swallows": [
+                {
+                    "class": "X-terminal-emulator",
+                    "instance": "x-terminal-emulator",
+                    "window_role": "win_right_bottom"
+                }
+            ]
+        }
+
+    ]
+}
+²
