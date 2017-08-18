@@ -27,6 +27,12 @@ alias apt-r='sudo apt-get remove'
 alias apt-p='sudo apt-get purge'
 alias apt-ar='sudo apt-get autoremove'
 
+alias git-s='git status'
+alias git-a='git add'
+alias git-aa='git add -A'
+alias git-p='git push -u origin master'
+alias git-c='git commit -m'
+
 # npm
 alias npm-i='npm install'
 
