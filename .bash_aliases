@@ -28,11 +28,13 @@ alias aptp='sudo apt-get purge'
 alias aptar='sudo apt-get autoremove'
 
 # git
+alias giti='git init'
 alias gits='git status'
 alias gita='git add'
 alias gitaa='git add -A'
 alias gitp='git push -u origin master'
 alias gitc='git commit -m'
+alias gitcl='git clone'
 
 # npm
 alias npmi='npm install'
