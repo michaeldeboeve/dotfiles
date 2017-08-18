@@ -18,23 +18,24 @@ alias sites='cd ~/Sites'
 alias videos='cd ~/Videos'
 
 # apt
-alias apt-i='sudo apt-get install'
-alias apt-u='sudo apt-get update'
-alias apt-ug='sudo apt-get upgrade'
-alias apt-c='sudo apt-get clean'
-alias apt-ac='sudo apt-get autoclean'
-alias apt-r='sudo apt-get remove'
-alias apt-p='sudo apt-get purge'
-alias apt-ar='sudo apt-get autoremove'
+alias apti='sudo apt-get install'
+alias aptu='sudo apt-get update'
+alias aptug='sudo apt-get upgrade'
+alias aptc='sudo apt-get clean'
+alias aptac='sudo apt-get autoclean'
+alias aptr='sudo apt-get remove'
+alias aptp='sudo apt-get purge'
+alias aptar='sudo apt-get autoremove'
 
-alias git-s='git status'
-alias git-a='git add'
-alias git-aa='git add -A'
-alias git-p='git push -u origin master'
-alias git-c='git commit -m'
+# git
+alias gits='git status'
+alias gita='git add'
+alias gitaa='git add -A'
+alias gitp='git push -u origin master'
+alias gitc='git commit -m'
 
 # npm
-alias npm-i='npm install'
+alias npmi='npm install'
 
 
 # Files
