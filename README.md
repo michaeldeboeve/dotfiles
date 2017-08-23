@@ -1,2 +1,2 @@
 ## Dot files
-.dot config files for linux
+Dot config files for Linux and MacOSX

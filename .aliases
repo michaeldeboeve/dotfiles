@@ -1,32 +1,24 @@
-# system
-alias shutdown='sudo shutdown -h now'
-#alias reboot='sudo reboot'
-#alias logout='i3-msg exit'
-#alias lock='i3lock'
-
-
+##
 # folders
-alias home='cd ~'
+alias ..='cd ../'
+alias ...='cd ../../'
+alias ....='cd ../../../'
+alias fusers='cd ~/../'
+alias froot='cd ~/../../'
+alias home='cd ~/'
 alias desktop='cd ~/Desktop'
 alias documents='cd ~/Documents'
 alias downloads='cd ~/Downloads'
+alias dropbox='cd ~/Dropbox'
+alias movies='cd ~/Movies'
 alias music='cd ~/Music'
 alias pictures='cd ~/Pictures'
 alias projects='cd ~/Projects'
 alias public='cd ~/Public'
 alias sites='cd ~/Sites'
-alias videos='cd ~/Videos'
 
-# apt
-alias apti='sudo apt-get install'
-alias aptu='sudo apt-get update'
-alias aptug='sudo apt-get upgrade'
-alias aptc='sudo apt-get clean'
-alias aptac='sudo apt-get autoclean'
-alias aptr='sudo apt-get remove'
-alias aptp='sudo apt-get purge'
-alias aptar='sudo apt-get autoremove'
 
+##
 # git
 alias giti='git init'
 alias gits='git status'
@@ -36,10 +28,37 @@ alias gitp='git push -u origin master'
 alias gitc='git commit -m'
 alias gitcl='git clone'
 
+# git short
+alias gi='git init'
+alias gs='git status'
+alias ga='git add'
+alias gaa='git add -A'
+alias gp='git push -u origin master'
+alias gc='git commit -m'
+alias gcl='git clone'
+
+
+##
 # npm
 alias npmi='npm install'
+alias npmin='npm init'
+alias npmln='npm link'
+alias npmp='npm publish'
+alias npmrm='npm remove'
+alias npmup='npm update'
+alias npmd='npm doctor'
+
+# npm short
+alias ni='npm install'
+alias nin='npm init'
+alias nln='npm link'
+alias np='npm publish'
+alias nrm='npm remove'
+alias nup='npm update'
+alias nd='npm doctor'
 
 
-# Files
+##
+# files
 alias l="ls -o -hX --group-directories-first"
 alias la="ls -o -AhX --group-directories-first"
