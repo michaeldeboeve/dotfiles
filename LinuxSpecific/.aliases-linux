@@ -1,0 +1,5 @@
+# system
+alias shutdown='sudo shutdown -h now'
+#alias reboot='sudo reboot'
+#alias logout='i3-msg exit'
+#alias lock='i3lock'

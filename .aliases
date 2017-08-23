@@ -1,4 +1,18 @@
 ##
+# OS Specific aliases
+case `uname` in
+  Darwin)
+    source $HOME/.aliases-macosx
+    alias myos='echo Mac OSX'
+    ;;
+  Linux)
+    source $HOME/.aliases-linux
+    alias myos='echo Linux'
+    ;;
+esac
+
+
+##
 # folders
 alias ..='cd ../'
 alias ...='cd ../../'

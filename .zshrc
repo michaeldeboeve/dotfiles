@@ -36,16 +36,6 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 plugins=(git npm bower node sudo terminator)
 
-case `uname` in
-  Darwin)
-    source $HOME/.aliases-macosx
-    alias myos='echo Mac OSX'
-    ;;
-  Linux)
-    source $HOME/.aliases-linux
-    alias myos='echo Linux'
-    ;;
-esac
-
+source $HOME/.aliases
 source $HOME/.zshrc-powerlevel9k
 source $ZSH/oh-my-zsh.sh
