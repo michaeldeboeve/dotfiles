@@ -1,6 +1,5 @@
-[user]
-  name = username
-  email = useremail
+[include]
+    path = .gitconfig-personal
 [core]
   editor = nano
 [alias]
