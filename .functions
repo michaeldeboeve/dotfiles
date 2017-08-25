@@ -1,0 +1,27 @@
+##
+# files
+myip () {
+    case `uname` in
+      Darwin)
+        INT=$(ip route get 8.8.8.8 | awk '{print $NF; exit}')
+        ;;
+      Linux)
+        INT=$(ip route get 8.8.8.8 | awk '{print $NF; exit}')
+        ;;
+    esac
+    
+    EXT=$(dig +short myip.opendns.com @resolver1.opendns.com)
+    echo "   Local: $INT"
+    echo "External: $EXT" 
+}
+
+showmap() {
+    EXT=$(dig +short myip.opendns.com @resolver1.opendns.com)
+    iponmap $EXT
+}
+
+
+##
+# go to folders
+project() { cd ~/Projects/$1    }
+site()    { cd ~/Sites/$1       }

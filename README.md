@@ -10,7 +10,7 @@ ln -s $HOME/Projects/dotfiles/.bashrc $HOME/.bashrc
 ln -s $HOME/Projects/dotfiles/.zshrc $HOME/.zshrc
 ln -s $HOME/Projects/dotfiles/.zshrc-powerlevel9k $HOME/.zshrc-powerlevel9k
 ln -s $HOME/Projects/dotfiles/.profile $HOME/.profile
-ln -s $HOME/Projects/dotfiles/.atom $HOME/.atom
+ln -s $HOME/Projects/dotfiles/.functions $HOME/.functions
 ```
 ### Git
 ```

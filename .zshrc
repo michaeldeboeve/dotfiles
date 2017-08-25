@@ -36,6 +36,16 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 plugins=(git npm bower node sudo terminator)
 
-source $HOME/.aliases
-source $HOME/.zshrc-powerlevel9k
-source $ZSH/oh-my-zsh.sh
+
+
+if [ -f $HOME/.aliases ]; then
+    source $HOME/.aliases
+fi
+
+if [ -f $HOME/.zshrc-powerlevel9k ]; then
+    source $HOME/.zshrc-powerlevel9k
+fi
+
+if [ -f $ZSH/oh-my-zsh.sh ]; then
+    source $ZSH/oh-my-zsh.sh
+fi

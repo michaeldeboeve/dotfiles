@@ -2,11 +2,15 @@
 # OS Specific aliases
 case `uname` in
   Darwin)
-    source $HOME/.aliases-macosx
+    if [ -f $HOME/.aliases-macosx ]; then
+        source $HOME/.aliases-macosx
+    fi
     alias myos='echo Mac OSX'
     ;;
   Linux)
-    source $HOME/.aliases-linux
+    if [ -f $HOME/.aliases-linux ]; then
+        source $HOME/.aliases-linux
+    fi
     alias myos='echo Linux'
     ;;
 esac
@@ -77,14 +81,10 @@ alias nd='npm doctor'
 alias l="ls -o -hX --group-directories-first"
 alias la="ls -o -AhX --group-directories-first"
 
-myip () {
-    INT=$(ip route get 8.8.8.8 | awk '{print $NF; exit}')
-    EXT=$(dig +short myip.opendns.com @resolver1.opendns.com)
-    echo "   Local: $INT"
-    echo "External: $EXT" 
-}
 
-showmap() {
-    EXT=$(dig +short myip.opendns.com @resolver1.opendns.com)
-    iponmap $EXT
-}
+
+##
+# functions
+if [ -f $HOME/.functions ]; then
+    source $HOME/.functions
+fi
