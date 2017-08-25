@@ -1,0 +1,63 @@
+[global_config]
+  sticky = True
+  suppress_multiple_term_dialog = True
+  window_state = maximise
+[keybindings]
+[layouts]
+  [[default]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = bac11180-3c95-41b8-a03c-5d0dee1f6d6f
+      last_active_window = True
+      maximised = False
+      order = 0
+      parent = ""
+      position = 0:54
+      size = 2874, 1158
+      title = michael@michael-NixBookPro ~
+      type = Window
+    [[[child1]]]
+      order = 0
+      parent = child0
+      position = 1471
+      ratio = 0.512700069589
+      type = HPaned
+    [[[child3]]]
+      order = 1
+      parent = child1
+      position = 559
+      ratio = 0.484887737478
+      type = VPaned
+    [[[terminal2]]]
+      order = 0
+      parent = child1
+      profile = default
+      type = Terminal
+      uuid = bac11180-3c95-41b8-a03c-5d0dee1f6d6f
+    [[[terminal4]]]
+      order = 0
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = 9491bb71-4cf6-44d7-b2f9-2c36f3789801
+    [[[terminal5]]]
+      order = 1
+      parent = child3
+      profile = default
+      type = Terminal
+      uuid = e9839c5a-2689-45b4-b2f3-e2c5c38996e9
+[plugins]
+[profiles]
+  [[default]]
+    background_color = "#303642"
+    background_darkness = 0.93
+    background_image = None
+    background_type = transparent
+    cursor_shape = ibeam
+    font = Hack 8
+    foreground_color = "#839496"
+    palette = "#414a59:#cc575d:#77c733:#c7b73f:#5294e2:#d33682:#2aa198:#eee8d5:#002b36:#cc7757:#586e75:#657b83:#839496:#cc57bc:#93a1a1:#fdf6e3"
+    scrollback_infinite = True
+    scrollbar_position = hidden
+    show_titlebar = False
+    use_system_font = False

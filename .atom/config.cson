@@ -1,0 +1,17 @@
+"*":
+  "atom-material-ui":
+    colors:
+      abaseColor: "#2196f3"
+      predefinedColor: "Blue"
+  core:
+    telemetryConsent: "no"
+    themes: [
+      "atom-material-ui"
+      "one-dark-syntax"
+    ]
+  editor:
+    fontSize: 12
+  "exception-reporting":
+    userId: "3a1d8e1d-f664-4feb-a2a6-63f2bbe7f9cc"
+  welcome:
+    showOnStartup: false

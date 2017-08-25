@@ -76,3 +76,15 @@ alias nd='npm doctor'
 # files
 alias l="ls -o -hX --group-directories-first"
 alias la="ls -o -AhX --group-directories-first"
+
+myip () {
+    INT=$(ip route get 8.8.8.8 | awk '{print $NF; exit}')
+    EXT=$(dig +short myip.opendns.com @resolver1.opendns.com)
+    echo "   Local: $INT"
+    echo "External: $EXT" 
+}
+
+showmap() {
+    EXT=$(dig +short myip.opendns.com @resolver1.opendns.com)
+    iponmap $EXT
+}
