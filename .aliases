@@ -17,6 +17,12 @@ esac
 
 
 ##
+# misc
+alias c="clear"
+alias histg="history | grep"
+
+
+##
 # folders
 alias ..='cd ../'
 alias ...='cd ../../'
