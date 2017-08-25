@@ -1,5 +1,5 @@
 [include]
-    path = .gitconfig-personal
+    path = .gitconfig-base
 [core]
   editor = nano
 [alias]
