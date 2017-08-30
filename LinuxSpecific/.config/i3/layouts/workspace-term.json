@@ -1,5 +1,4 @@
 {
-    // stacked split container with 2 children
     "layout": "stacked",
     "percent": 0.5,
     "type": "con",
@@ -12,7 +11,7 @@
                 {
                     "class": "X-terminal-emulator",
                     "instance": "x-terminal-emulator",
-		    "window_role": "win_temp"
+                    "window_role": "win_temp"
                 }
             ]
         },
@@ -32,7 +31,6 @@
 }
 
 {
-    // splitv split container with 1 children
     "layout": "splitv",
     "percent": 0.5,
     "type": "con",
@@ -62,4 +60,3 @@
 
     ]
 }
-²
