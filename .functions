@@ -23,12 +23,28 @@ showmap() {
 
 
 ##
-# folders
+# host file
+hosts() {
+    case `uname` in
+      Darwin)
+        HOSTFILE="/private/etc/hosts"
+        ;;
+      Linux)
+        HOSTFILE="/etc/hosts"
+        ;;
+    esac
+    sudo nano "$HOSTFILE"
+}
+
+
+
+##
+# folderss
 project() { cd ~/Projects/$1 }
 proj()    { cd ~/Projects/$1 }
 site()    { cd ~/Sites/$1    }
-mcd ()    { mkdir -p $1 && cd $1 }
-cls()     { cd "$1"; ls;}
+mcd ()    { mkdir -p $1; cd $1 }
+cls()     { cd "$1"; ls $2 s}
 
 
 
