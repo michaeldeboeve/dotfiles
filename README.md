@@ -37,7 +37,7 @@ ln -s $HOME/Projects/dotfiles/.iterm2_shell_integration.bash $HOME/.iterm2_shell
 ln -s $HOME/Projects/dotfiles/.bash_profile $HOME/.bash_profile
 ```	
 
-### Install zsh
+### Install zsh ubuntu/mint
 ```
 sudo apt-get update
 sudo apt-get upgrade
