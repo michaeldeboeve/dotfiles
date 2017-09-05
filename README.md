@@ -23,21 +23,21 @@ change `username` and `useremail` in `.gitconfig`
 
 ### Linux
 ```
-ln -s $HOME/Projects/dotfiles/LinuxSpecific/.aliases-linux $HOME/.aliases-linux
-ln -s $HOME/Projects/dotfiles/LinuxSpecific/.i3blocks.conf $HOME/.i3blocks.conf
-ln -s $HOME/Projects/dotfiles/LinuxSpecific/.config/i3 $HOME/.config/i3
+ln -s $HOME/Projects/dotfiles/.aliases-linux $HOME/.aliases-linux
+ln -s $HOME/Projects/dotfiles/.i3blocks.conf $HOME/.i3blocks.conf
+ln -s $HOME/Projects/dotfiles/.config/i3 $HOME/.config/i3
 ln -s $HOME/Projects/dotfiles/.fonts $HOME/.fonts
-ln -s $HOME/Projects/dotfiles/LinuxSpecific/.config/terminator $HOME/.config/terminator
-ln -s $HOME/Projects/dotfiles/LinuxSpecific/.xprofile $HOME/.xprofile
+ln -s $HOME/Projects/dotfiles/.config/terminator $HOME/.config/terminator
+ln -s $HOME/Projects/dotfiles/.xprofile $HOME/.xprofile
 ```
 ### MacOSX
 ```
-ln -s $HOME/Projects/dotfiles/MacOSXSpecific/.aliases-macosx $HOME/.aliases-macosx
-ln -s $HOME/Projects/dotfiles/MacOSXSpecific/.iterm2_shell_integration.bash $HOME/.iterm2_shell_integration.bash
-ln -s $HOME/Projects/dotfiles/MacOSXSpecific/.bash_profile $HOME/.bash_profile
+ln -s $HOME/Projects/dotfiles/.aliases-macosx $HOME/.aliases-macosx
+ln -s $HOME/Projects/dotfiles/.iterm2_shell_integration.bash $HOME/.iterm2_shell_integration.bash
+ln -s $HOME/Projects/dotfiles/.bash_profile $HOME/.bash_profile
 ```	
 
-### Install zsh
+### Install zsh ubuntu/mint
 ```
 sudo apt-get update
 sudo apt-get upgrade
