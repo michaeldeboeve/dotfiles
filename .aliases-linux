@@ -8,26 +8,6 @@ alias shutdown='sudo shutdown -h now'
 
 
 ##
-# apt
-alias aptu="sudo apt-get update"
-alias apti="sudo apt-get install"
-alias aptfi="sudo apt-get -f install"
-alias aptug="sudo apt-get upgrade"
-alias aptdug="sudo apt-get dist-upgrade"
-alias aptr="sudo apt-get remove"
-alias aptar="sudo apt-get autoremove"
-alias aptac="sudo apt-get autoclean"
-alias aptc="sudo apt-get clean"
-alias aptp="sudo apt-get purge"
+# pacman
 
-# apt short
-alias au="sudo apt-get update"
-alias ai="sudo apt-get install"
-alias afi="sudo apt-get -f install"
-alias aug="sudo apt-get upgrade"
-alias adug="sudo apt-get dist-upgrade"
-alias ar="sudo apt-get remove"
-alias aar="sudo apt-get autoremove"
-alias aac="sudo apt-get autoclean"
-alias ac="sudo apt-get clean"
-alias ap="sudo apt-get purge"	
+# pacman short
