@@ -1,5 +1,5 @@
 # dotfiles
-Personal dotfiles for Linux and MacOSX
+Personal dotfiles for Linux and MacOSX 
 
 ## Make symlinks
 
