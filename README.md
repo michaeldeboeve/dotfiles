@@ -37,7 +37,7 @@ ln -s $HOME/Projects/dotfiles/MacOSXSpecific/.iterm2_shell_integration.bash $HOM
 ln -s $HOME/Projects/dotfiles/MacOSXSpecific/.bash_profile $HOME/.bash_profile
 ```	
 
-### Install zsh
+### Install zsh ubuntu/mint
 ```
 sudo apt-get update
 sudo apt-get upgrade
