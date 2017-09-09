@@ -31,7 +31,7 @@ font pango:System San Francisco Display 8
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec i3-sensible-terminal --layout=i3
 
 # kill focused window
 bindsym $mod+Shift+q kill
@@ -99,7 +99,7 @@ bindsym $mod+q focus parent
 set $workspace1 "1: Term "
 #set $workspace1 1
 set $workspace2 "2: Firefox "
-set $workspace3 "3: Chromium "
+set $workspace3 "3: Chrome "
 set $workspace4 "4: Dev "
 set $workspace5 "5: Files "
 set $workspace6 "6: "
@@ -134,8 +134,9 @@ bindsym $mod+Shift+agrave move container to workspace $workspace10
 
 # Assign applications to workspaces
 assign [class="Firefox"] $workspace2
-assign [class="Chromium-browser"] $workspace3
-assign [class="Thunar"] $workspace5
+assign [class="Google-chrome"] $workspace3
+#assign [class="Thunar"] $workspace5
+assign [class="Nemo"] $workspace5
 assign [class="Slack"] $workspace8
 assign [class="vlc"] $workspace9
 
@@ -214,7 +215,7 @@ bindsym $mod+shift+x exec i3lock --color "$bg-color"
 
 # Start these applications along with i3
 # exec <appname>
-exec xrandr --dpi 220
+exec xrandr --dpi 144
 
 # Transparency
 #exec compton -f
@@ -222,19 +223,20 @@ exec --no-startup-id compton -f
 
 
 # Set wallpaper
-exec_always feh --bg-scale /home/michael/Pictures/wallpaper.png
+exec_always feh --bg-scale /home/michael/Pictures/wallpapers/Superlatief/superlatief arc/superlatief-arc-3.png
 
 
 # Make Terminal workspace layout containers
 exec --no-startup-id i3-msg "workspace 1: Term ; append_layout /home/michael/.config/i3/layouts/workspace-term.json"
 
 # Populate the containers with terminals
-exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal -r win_temp -e compton"
-exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal -r win_left"
-exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal -r win_right_top"
-exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal -r win_right_bottom"
-#exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal -r win_right_bottom -e glances"
+exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal --layout=i3 -r win_temp -e compton"
+exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal --layout=i3 -r win_left"
+exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal --layout=i3 -r win_right_top"
+exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal --layout=i3 -r win_right_bottom"
+#exec --no-startup-id i3-msg "workspace 1: Term ; exec i3-sensible-terminal --layout=i3 -r win_right_bottom -e glances"
 
 # Start Firefox 
 #exec firefox
-exec chromium-browser --force-device-scale-factor=2
+#exec chromium-browser --force-device-scale-factor=2
+exec google-chrome

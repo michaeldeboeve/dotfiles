@@ -14,12 +14,12 @@
       parent = ""
       position = 0:54
       size = 2874, 1158
-      title = michael@michael-NixBookPro ~
       type = Window
     [[[child1]]]
       order = 0
       parent = child0
       position = 1471
+      profile = None
       ratio = 0.512700069589
       type = HPaned
     [[[child3]]]
@@ -46,6 +46,24 @@
       profile = default
       type = Terminal
       uuid = e9839c5a-2689-45b4-b2f3-e2c5c38996e9
+  [[i3]]
+    [[[child0]]]
+      fullscreen = False
+      last_active_term = e9839c5a-2689-45b4-b2f3-e2c5c38996e9
+      last_active_window = True
+      maximised = True
+      order = 0
+      parent = ""
+      position = 0:54
+      size = 3840, 2077
+      title = michael@migMint: ~
+      type = Window
+    [[[terminal1]]]
+      order = 0
+      parent = child0
+      profile = default
+      type = Terminal
+      uuid = e9839c5a-2689-45b4-b2f3-e2c5c38996e9
 [plugins]
 [profiles]
   [[default]]
@@ -54,10 +72,14 @@
     background_image = None
     background_type = transparent
     cursor_shape = ibeam
-    font = Hack 8
+    font = Hack 12
     foreground_color = "#839496"
     palette = "#414a59:#cc575d:#77c733:#c7b73f:#5294e2:#d33682:#2aa198:#eee8d5:#002b36:#cc7757:#586e75:#657b83:#839496:#cc57bc:#93a1a1:#fdf6e3"
     scrollback_infinite = True
     scrollbar_position = hidden
     show_titlebar = False
+    use_system_font = False
+  [[i3]]
+    background_image = None
+    font = Hack 8
     use_system_font = False

@@ -10,6 +10,7 @@ alias shutdown='sudo shutdown -h now'
 ##
 # apt
 alias aptu="sudo apt-get update"
+alias aptrepo="sudo add-apt-repository"
 alias apti="sudo apt-get install"
 alias aptfi="sudo apt-get -f install"
 alias aptug="sudo apt-get upgrade"
@@ -22,6 +23,7 @@ alias aptp="sudo apt-get purge"
 
 # apt short
 alias au="sudo apt-get update"
+alias arepo="sudo add-apt-repository"
 alias ai="sudo apt-get install"
 alias afi="sudo apt-get -f install"
 alias aug="sudo apt-get upgrade"
