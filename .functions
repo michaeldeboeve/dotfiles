@@ -39,12 +39,26 @@ hosts() {
 
 
 ##
-# folderss
+# folders
 project() { cd ~/Projects/$1 }
 proj()    { cd ~/Projects/$1 }
 site()    { cd ~/Sites/$1    }
 mcd ()    { mkdir -p $1; cd $1 }
 cls()     { cd "$1"; ls $2 s}
+
+
+##
+# hidden files
+function dots {
+  if [ "$1" = "show" ] || [ "$1" = "true" ] || [ "$1" = "1" ] || [ -z "$1" ];
+    then
+      defaults write com.apple.Finder AppleShowAllFiles true && killall Finder
+  elif [ "$1" = "hide" ] || [ "$1" = "false" ] || [ "$1" = "0" ];
+    then
+      defaults write com.apple.Finder AppleShowAllFiles false && killall Finder
+  fi
+}
+
 
 
 

@@ -65,12 +65,15 @@ alias gcl='git clone'
 ##
 # npm
 alias npmi='npm install'
+alias npmis='npm install --save'
+alias npmisd='npm install --save-dev'
 alias npmin='npm init'
 alias npmln='npm link'
 alias npmp='npm publish'
 alias npmrm='npm remove'
 alias npmup='npm update'
 alias npmd='npm doctor'
+alias npms='npm start'
 
 # npm short
 alias ni='npm install'
@@ -80,6 +83,19 @@ alias np='npm publish'
 alias nrm='npm remove'
 alias nup='npm update'
 alias nd='npm doctor'
+alias ns='npm start'
+
+
+
+##
+# apm (atom)
+alias apmi='apm install';
+alias apmc='apm clean';
+alias apmd='apm disable';
+alias apme='apm enable';
+alias apmr='apm remove';
+alias apmu='apm update';
+alias apmug='apm upgrade';
 
 
 ##
@@ -88,9 +104,12 @@ alias l="ls -o -hX --group-directories-first"
 alias la="ls -o -AhX --group-directories-first"
 
 
-
 ##
 # functions
 if [ -f $HOME/.functions ]; then
     source $HOME/.functions
+fi
+
+if [ -f $HOME/.aliases-dzengis ]; then
+    source $HOME/.aliases-dzengis
 fi
