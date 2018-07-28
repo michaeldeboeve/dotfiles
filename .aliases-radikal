@@ -1,0 +1,44 @@
+##
+# Martens
+function martens {
+  if [ "$1" = "gulp" ];
+    then
+      ~/Radikal/rad-mart-001/gulp;gulp
+  elif [ "$1" = "serve" ] || [ "$1" = "start" ];
+    then
+      ~/Radikal/rad-mart-001/website;npm start
+  fi
+}
+
+# Tutu Shop
+function tutu {
+  if [ "$1" = "gulp" ];
+    then
+      ~/Radikal/rad-tutu-003/gulp;gulp
+  elif [ "$1" = "watch" ] || [ "$1" = "theme" ];
+    then
+      ~/Radikal/rad-tutu-003/website;theme watch
+  fi
+}
+
+
+# Track
+function track {
+  if [ "$1" = "gulp" ];
+    then
+      ~/Radikal/rad-leap-trac-001/gulp;gulp
+  fi
+}
+
+
+
+# Firstfloor
+function firstfloor {
+  if [ "$1" = "gulp" ];
+    then
+      ~/Radikal/rad-fflo-001/gulp;gulp
+  elif [ "$1" = "website" ];
+    then
+      ~/Radikal/rad-fflo-001/website
+  fi
+}
