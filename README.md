@@ -33,6 +33,7 @@ ln -s $HOME/Projects/dotfiles/.xprofile $HOME/.xprofile
 ### MacOSX
 ```
 ln -s $HOME/Projects/dotfiles/.aliases-macosx $HOME/.aliases-macosx
+ln -s $HOME/Projects/dotfiles/.aliases-radikal $HOME/.aliases-radikal
 ln -s $HOME/Projects/dotfiles/.iterm2_shell_integration.bash $HOME/.iterm2_shell_integration.bash
 ln -s $HOME/Projects/dotfiles/.bash_profile $HOME/.bash_profile
 ```	

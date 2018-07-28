@@ -25,6 +25,8 @@ alias bcrm='brew cask remove'
 alias bcs='brew cask search'
 alias bcd='brew cask doctor'
 
+# WTF
+alias wtf='cd /Applications/wtf && ./wtf'
 
 ##
 # php
