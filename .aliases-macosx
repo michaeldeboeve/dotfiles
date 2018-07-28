@@ -26,6 +26,7 @@ alias bcs='brew cask search'
 alias bcd='brew cask doctor'
 
 # WTF
+# https://wtfutil.com/posts/installation/
 alias wtf='cd /Applications/wtf && ./wtf'
 
 ##
